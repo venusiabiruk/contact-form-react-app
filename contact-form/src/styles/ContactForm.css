@@ -1,0 +1,83 @@
+/* ContactForm.css */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #d3cce3, #e9e4f0);
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-container {
+  width: 90%;
+  max-width: 800px;
+  padding: 40px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  border-radius: 30px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.contact-container h2 {
+  text-align: center;
+  color: #4b0082;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border: 1.5px solid #ccc;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #4b0082;
+  box-shadow: 0 0 8px rgba(75, 0, 130, 0.3);
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #4b0082;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #6a0dad;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
